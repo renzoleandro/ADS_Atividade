@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <div class=login-page>
+
+        <div class=row>
+           <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+
+    <style>
+
+
+        .login-page {
+        background-image: url("html/img/demon\ slayer.png");
+        background-repeat: no-repeat;
+        background-size: 99%;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        padding: 3em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        }
+        
+
+
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        form {
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        .logar {
+            color: blue;
+        }
+
+        .usuario {
+            color: yellow;
+        }
+
+        .senha {
+            color: yellow;
+        }
+
+        input {
+            color: blue;
+        }
+        
+        .limpar{
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+
+        <h1> | - HOME - | </h1>
+
+        <h1 class="logar" >LOGIN</h1>
+        <h2 class="usuario" >USUÁRIO : </h2>
+        <input type="text" placeholder="LOGIN" id="login">
+        <h2 class="senha" >SENHA : </h2>
+        <input type="password" placeholder="SENHA" id="senha">
+
+        <input type="submit" value="ENVIAR" onclick="logar(); return false">
+
+        <input class="limpar" type="reset" value="LIMPAR"><br>
+
+    </form>
+
+
+    <script>
+        alert("login é 'usuario' já a senha é '12345'. ");
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "usuario" && senha == "12345") {
+                alert('Sucesso');
+                location.href = "html/html.html";
+            } else {
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+<!--  location.href = "categoria/html/index.html";  -->
+<!-- <a  style="display: block; margin: 0 auto;"></a>  -->
